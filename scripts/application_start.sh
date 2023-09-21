@@ -13,6 +13,8 @@ cd /home/ubuntu/myapp
 
 #install node modules
 npm install
+npm install -g pm2
+npm install -g serve
 
 #start our node app in the background
-npm run
+pm2 serve build 80
